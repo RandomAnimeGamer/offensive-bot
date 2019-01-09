@@ -1,0 +1,13 @@
+{
+  "name": "Offensive Bot",
+  "description": "Upon mention of a fighting game, this bot will respond with something offensive about that game without regards to actual truth.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
+}
