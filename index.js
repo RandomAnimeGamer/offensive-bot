@@ -180,6 +180,12 @@ client.on('message', message => {
                 return;
             }
         }
+        if(parsed[i] === "super" && length >= i + 1) {
+            if(parsed[i + 1] === "smash" || parsed[i + 1] === "smash." || parsed[i + 1] === "smash!" || parsed[i + 1] === "smash?") {
+                smashdiss(message.channel);
+                return;
+            }
+        }
         for(var j = 0; j < smash.length; j++) {
             if(parsed[i] == smash[j]) {
                 smashdiss(message.channel);
