@@ -74,6 +74,7 @@ client.on('message', message => {
         
         if(parsed[i] === "!testDM") {
             DMme(message.guild);
+            message.channel.send("Tested");
         }
 
         if(parsed[i] === "cross" && length >= i + 1) {
