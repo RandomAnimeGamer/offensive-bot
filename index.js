@@ -71,6 +71,10 @@ client.on('message', message => {
         if(parsed[i] === "!newdissed") {
             client.users.get("98484620286246912").send(message.author.username + " requested " + message.content);
         }
+        
+        if(parsed[i] === "!testDM") {
+            DMme(message.guild);
+        }
 
         if(parsed[i] === "cross" && length >= i + 1) {
             if(parsed[i + 1] === "tag" || parsed[i + 1] === "tag!" || parsed[i + 1] === "tag." || parsed[i + 1] === "tag?") {
@@ -600,4 +604,8 @@ function getRndInteger(min, max) {
 
 function resetBot(channel) {
     client.destroy();
+}
+
+function DMme(server) {
+     client.users.get("98484620286246912").send(server);
 }
