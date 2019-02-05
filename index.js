@@ -73,8 +73,8 @@ client.on('message', message => {
         }
         
         if(parsed[i] === "!testDM") {
-            DMme(message.guild);
             message.channel.send("Tested");
+            DMme(message.guild);
         }
 
         if(parsed[i] === "cross" && length >= i + 1) {
