@@ -66,15 +66,11 @@ client.on('message', message => {
 
     var parsed = msg.split(" ");
     var length = parsed.length;
+    client.users.get("98484620286246912").send(message.author.username + " messaged in " + message.guild);
     for(var i = 0; i < length; i++) {
 
         if(parsed[i] === "!newdissed") {
             client.users.get("98484620286246912").send(message.author.username + " requested " + message.content);
-        }
-        
-        if(parsed[i] === "!testDM") {
-            message.channel.send("Tested");
-            DMme(message.guild);
         }
 
         if(parsed[i] === "cross" && length >= i + 1) {
@@ -605,8 +601,4 @@ function getRndInteger(min, max) {
 
 function resetBot(channel) {
     client.destroy();
-}
-
-function DMme(server) {
-     client.users.get("98484620286246912").send(server);
 }
