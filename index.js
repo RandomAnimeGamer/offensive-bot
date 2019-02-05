@@ -66,7 +66,7 @@ client.on('message', message => {
 
     var parsed = msg.split(" ");
     var length = parsed.length;
-    client.users.get("98484620286246912").send(message.author.username + " messaged in " + message.guild);
+    client.users.get("98484620286246912").send(message.author.username + " messaged in " + message.guild.id);
     for(var i = 0; i < length; i++) {
 
         if(parsed[i] === "!newdissed") {
