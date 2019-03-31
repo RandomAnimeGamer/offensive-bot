@@ -39,7 +39,7 @@ var tekken = ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "ttt", "ttt2", "t1!", "t
 var tekkenR = ["How are you enjoying your DLC?", "Isn't Tekken like that one Naruto Ninja Storm game or something?", "You must love Korean Backdashing.", "Wasn't this supposed to be the biggest fighting game this generation?", "Just play Soul Calibur 6, already!", "Only shills defend that game."];
 var arcana = ["ah1", "ah2", "ah3", "ah3lm", "ah3lmss", "ah3ss"];
 var arcanaR = ["Like Skullgirls but for weeaboos", "This game is almost as dead as Chaos Code.", "Wasn't Arcana Heart 4 supposed to happen?", "There's nothing better than a large company holding a small patch hostage on Kickstarter, and then expecting people to still pay $60 for the update!", "Like BlazBlue but made for the 'progressive crowd' that wants 'equal female representation' in fighting games, but whines about Dead or Alive and Skullgirls 'oversexualizing' constantly.", "Rare footage of someone actually talking about Arcana Heart.", "Don't even lie, you play this game for the waifus.", "Only Arc System Works shills defend that game."];
-var snk = ["kof", "kof94", "kof'94", "kof95", "kof'95", "kof96", "kof'96", "kof97", "kof'97", "kof98", "kof'98", "kof99", "kof'99", "kof00", "kof'00", "kof01", "kof'01", "kof02", "kof'02", "kof03", "kof'03", "kofxi", "kof11", "kofxii", "kof12", "kofxiii", "kof13", "kofxiv", "kof14", "kofmi", "kofmi2", "kof.", "kof94.", "kof'94.", "kof95.", "kof'95.", "kof96.", "kof'96.", "kof97.", "kof'97.", "kof98.", "kof'98.", "kof99.", "kof'99.", "kof00.", "kof'00.", "kof01.", "kof'01.", "kof02.", "kof'02.", "kof03.", "kof'03.", "kofxi.", "kof11.", "kofxii.", "kof12.", "kofxiii.", "kof13.", "kofxiv.", "kof14.", "kofmi.", "kofmi2.", "kof!", "kof94!", "kof'94!", "kof95!", "kof'95!", "kof96!", "kof'96!", "kof97!", "kof'97!", "kof98!", "kof'98!", "kof99!", "kof'99!", "kof00!", "kof'00!", "kof01!", "kof'01!", "kof02!", "kof'02!", "kof03!", "kof'03!", "kofxi!", "kof11!", "kofxii!", "kof12!", "kofxiii!", "kof13!", "kofxiv!", "kof14!", "kofmi!", "kofmi2!", "kof?", "kof94?", "kof'94?", "kof95?", "kof'95?", "kof96?", "kof'96?", "kof97?", "kof'97?", "kof98?", "kof'98?", "kof99?", "kof'99?", "kof00?", "kof'00?", "kof01?", "kof'01?", "kof02?", "kof'02?", "kof03?", "kof'03?", "kofxi?", "kof11?", "kofxii?", "kof12?", "kofxiii?", "kof13?", "kofxiv?", "kof14?", "kofmi?", "kofmi2?", "garou", "garou!", "garou.", "garou?", "snk", "snk.", "snk!", "snk?"];
+var snk = ["kof", "kof94", "kof'94", "kof95", "kof'95", "kof96", "kof'96", "kof97", "kof'97", "kof98", "kof'98", "kof99", "kof'99", "kof00", "kof'00", "kof01", "kof'01", "kof02", "kof'02", "kof03", "kof'03", "kofxi", "kof11", "kofxii", "kof12", "kofxiii", "kof13", "kofxiv", "kof14", "kofmi", "kofmi2", "kof.", "kof94.", "kof'94.", "kof95.", "kof'95.", "kof96.", "kof'96.", "kof97.", "kof'97.", "kof98.", "kof'98.", "kof99.", "kof'99.", "kof00.", "kof'00.", "kof01.", "kof'01.", "kof02.", "kof'02.", "kof03.", "kof'03.", "kofxi.", "kof11.", "kofxii.", "kof12.", "kofxiii.", "kof13.", "kofxiv.", "kof14.", "kofmi.", "kofmi2.", "kof!", "kof94!", "kof'94!", "kof95!", "kof'95!", "kof96!", "kof'96!", "kof97!", "kof'97!", "kof98!", "kof'98!", "kof99!", "kof'99!", "kof00!", "kof'00!", "kof01!", "kof'01!", "kof02!", "kof'02!", "kof03!", "kof'03!", "kofxi!", "kof11!", "kofxii!", "kof12!", "kofxiii!", "kof13!", "kofxiv!", "kof14!", "kofmi!", "kofmi2!", "kof?", "kof94?", "kof'94?", "kof95?", "kof'95?", "kof96?", "kof'96?", "kof97?", "kof'97?", "kof98?", "kof'98?", "kof99?", "kof'99?", "kof00?", "kof'00?", "kof01?", "kof'01?", "kof02?", "kof'02?", "kof03?", "kof'03?", "kofxi?", "kof11?", "kofxii?", "kof12?", "kofxiii?", "kof13?", "kofxiv?", "kof14?", "kofmi?", "kofmi2?", "garou", "garou!", "garou.", "garou?", "snk", "snk.", "snk!", "snk?", "shodown", "shodown.", "shodown!", "shodown?"];
 var snkR = ["How are you enjoying your DLC?", "Legends claim that SNK is still on the verge of bankruptcy to this day. They're not wrong.", "There's a community for that game?", "How's the outdated graphics?", "The middle-ground between Street Fighter and Marvel VS Capcom.", "When you're too poor to buy Street Fighter.", "Literally the second most dated fighting game mechanics-wise.", "How's that netcode?", "Literally the second worst fighting game regarding single player content.", "Anyone want to play Street Fighter instead?", "I swear this game is the Final Fantasy of fighting games. And by that I mean there's way too many damn sequels.", "What's the difference between each King of Fighters game? The year on the logo.", "Wait, isn't this just M.U.G.E.N. with less content?", "Don't even lie, you play this game for the waifus.", "Only SNK shills defend that game."];
 var jojo = ["hftf", "asb", "eoh", "hftf!", "asb!", "eoh!", "hftf.", "asb.", "eoh.", "hftf?", "asb?", "eoh?"];
 var jojoR = ["Like Dragon Ball games but for hipsters.", "Literally everyone in that game plays the exact same.", "Remember when CC2 tried to make these games competitive at 30FPS?", "Don't even lie, you play this game for memes.", "Don't even lie, you play this game for the husbandos.", "People still play that broken game?", "Only Jojo shills defend that game."];
@@ -47,7 +47,7 @@ var doa = ["doa", "doa++", "doa2", "doa2m", "doa2h", "doa3", "doa4", "doao", "do
 var doaR = ["How are you enjoying your DLC?", "Literally everyone in that game plays the exact same.", "Don't even lie, you play this game for the waifus.", "A true button masher, just like that Naruto Ninja Storm game.", "The inferior version of Tekken.", "Soul Calibur, but without the main appeal of a Soul Calibur game.", "Literally the worst PC port, not even the fans can fix it, let alone launch the game to begin with.", "If you want a buggy game, at least SFxT is functional.", "How's that netcode?", "Only shills defend that game."];
 var scalibur = ["sc", "sc1", "sc2", "sc3", "sc4", "sc5", "sc6", "sc!", "sc1!", "sc2!", "sc3!", "sc4!", "sc5!", "sc6!", "sc.", "sc1.", "sc2.", "sc3.", "sc4.", "sc5.", "sc6.", "sc?", "sc1?", "sc2?", "sc3?", "sc4?", "sc5?", "sc6?"];
 var scaliburR = ["I main Darth Vader.", "I main Yoda.", "Isn't that the one with Zelda in it?", "Isn't that the one with Link in it?", "I main Zelda.", "I main Link.", "The developers probably get off to anime sword fighters like the Smash Bros. director does.", "Adding Yun-seong was a mistake.", "Removing Yun-seong was a mistake.", "Soul Calibur 3 and onward was a mistake.", "Every Soul Calibur before 3 was a mistake.", "There's nothing better than holding your fighting game's sequels hostage when all the fans want is a good one.", "What even are the controls to this game?", "It's like they wanted a 2P2K, but then opted for an ABCD, and then settled on literally Guilty Gear but worse.", "Like Guilty Gear but more in-line with that Naruto Ninja Storm game.", "Only shills defend that game."];
-var mk = ["mk", "mk1", "mk2", "mk3", "umk3", "mk4", "mkda", "mka", "mkvdc", "mk9", "mkx", "mk10", "mk!", "mk1!", "mk2!", "mk3!", "umk3!", "mk4!", "mkda!", "mka!", "mkvdc!", "mk9!", "mkx!", "mk10!", "mk.", "mk1.", "mk2.", "mk3.", "umk3.", "mk4.", "mkda.", "mka.", "mkvdc.", "mk9.", "mkx.", "mk10.", "mk?", "mk1?", "mk2?", "mk3?", "umk3?", "mk4?", "mkda?", "mka?", "mkvdc?", "mk9?", "mkx?", "mk10?", "mkxl", "mkxl!", "mkxl.", "mkxl?", "mk10l", "mk10l!", "mk10l.", "mk10l?"];
+var mk = ["mk", "mk1", "mk2", "mk3", "umk3", "mk4", "mkda", "mka", "mkvdc", "mk9", "mkx", "mk10", "mk11", "mk!", "mk1!", "mk2!", "mk3!", "umk3!", "mk4!", "mkda!", "mka!", "mkvdc!", "mk9!", "mkx!", "mk10!", "mk11!", "mk.", "mk1.", "mk2.", "mk3.", "umk3.", "mk4.", "mkda.", "mka.", "mkvdc.", "mk9.", "mkx.", "mk10.", "mk11.", "mk?", "mk1?", "mk2?", "mk3?", "umk3?", "mk4?", "mkda?", "mka?", "mkvdc?", "mk9?", "mkx?", "mk10?", "mk11?", "mkxl", "mkxl!", "mkxl.", "mkxl?", "mk10l", "mk10l!", "mk10l.", "mk10l?"];
 var mkR = ["Ew, a block button.", "Arcade stick layout made by literally Satan.", "Not even Satan himself would touch that arcade stick layout.", "Mortal Kombat literally only exists because of 90s shock value.", "Like Duke Nukem but with a worse plot.", "Literally the only fighting game where stage hazards are the norm.", "Mortal Kombat X was a mistake.", "Mortal Kombat 9 was a mistake.", "Who still plays this game anymore?", "Hey guys, let's play Injustice 2!", "Only Mortal Kombat shills defend that game."];
 var injustice = ["injustice", "injustice!", "injustice.", "injustice?", "injustices", "injustices!", "injustices.", "injustices?"];
 var injusticeR = ["Enjoying your Red Shell spyware?", "Hey guys, let's play Mortal Kombat XL!", "Only Netherrealm shills defend that game.", "Like Mortal Kombat but with worse animations.", "This was at EVO mainstage for the same reason as BB Cross Tag Battle. Literally only so they could fill in space to keep out MVC:I.", "Since when did Mortal Kombat look this awful?", "Like Mortal Kombat but without the appeal of fatalities."];
@@ -59,6 +59,7 @@ var pokken = ["pokken", "pokken!", "pokken.", "pokken?"];
 var pokkenR = ["Literally everyone in that game plays the exact same.","Pokken is so unknown, even my creator forgot to put it in until someone mentioned it!", "Isn't it like that Ninja Storm game or something?", "Isn't this just a Tekken clone with weird fetish animals?", "The developers couldn't even decide whether they wanted a casual beat 'em up or an even more casual beat 'em up, so they put both in the game.", "You have to be really into Pokemon to even touch Pokken.", "How's the community of 8 people?", "I think everyone jumped off the Pokken ship when MattPatt was selected to go to a tournament over actual Pokken players.", "At least my Pokken pad is great for playing everything except Pokken!", "Only furries play this game.", "Only Nintendrones play this game.", "They thought the reason it sold poorly was because it was on Wii U. How funny, it sold poorly on Switch as well.", "That isn't a fighting game.", "You literally only press one button in that game.", "Only scrubs play that game.", "Only filthy casuals play that game.", "That game isn't worth anyone's time, it's not even competitive.", "Mario Party is more competitive than that game.", "Literally nobody plays that game.", "That game has the worst mechanics ever made.", "That's the most jank game ever, why would anyone play that?", "Oh yeah, that open-world beat em up game!"];
 var dmc4 = ["dmc4", "dmc4!", "dmc4.", "dmc4?"];
 var dmc4R = ["Devil May Cry 4 is the best fighting game in existence.", "Only truly cultured men can understand the depth and complexity of Devil May Cry 4.", "Devil May Cry 4 has the best netcode ever made, even better than GGPO.", "Devil May Cry 4 is literally the magnum opus of fighting games.", "Devil May Cry 4 is better than Half Life 3 because it's a fighting game.", "Devil May Cry 4 is FGOTY every year.", "EVO is too afraid to put Devil May Cry 4 on the mainstage because there aren't enough seats to fill in the large playerbase.", "Devil May Cry 4 is the literal only fighting game to strike the perfect balance between weeaboo and Street Fighter."];
+var rangersR = ["Wait, wasn't Justin Wong involved with this game? It doesn't look like it.", "Looks like a mobile game, plays like a mobile game.", "I play Power Rangers BFTG because I enjoy braindead loops.", "lol auto combos", "Hey, can I invite you to my lobby? What do you mean by 'no'?", "Known for the best game mode variety: VS Mode, Multi-VS Mode, Learning VS Mode, and Online VS Mode.", "Nobody plays that dead game anymore.", "How are you enjoying your DLC?", "Come on, you can play a game with more than two buttons.", "Literally everyone in that game plays the exact same.", "Don't even lie, you play this game only for nostalgia.", "That isn't a fighting game.", "You literally only press one button in that game.", "Only scrubs play that game.", "Only filthy casuals play that game.", "That game isn't worth anyone's time, it's not even competitive.", "Mario Party is more competitive than that game.", "Literally nobody plays that game.", "That game has the worst mechanics ever made.", "That's the most jank game ever, why would anyone play that?", "God, that game has the most toxic fanbase of weeaboos out there.", "Only shills and fanboys buy these shitty, overly mediocre nostalgia-bait games.", "Only shills and fanboys defend these shitty, overly mediocre nostalgia-bait games."];
 
 client.on('message', message => {
     if(message.author.id == 516344023628120206) return;
@@ -289,6 +290,12 @@ client.on('message', message => {
                 return;
             }
         }
+        if(parsed[i] === "samurai" && length >= i + 1) {
+            if(parsed[i + 1] === "showdown" || parsed[i + 1] === "showdown." || parsed[i + 1] === "showdown!" || parsed[i + 1] === "showdown?") {
+                snkdiss(message.channel);
+                return;
+            }
+        }
         for(var j = 0; j < snk.length; j++) {
             if(parsed[i] == snk[j]) {
                 snkdiss(message.channel);
@@ -425,6 +432,32 @@ client.on('message', message => {
             arenadiss(message.channel);
             return;
         }
+        if(parsed[i] === "virtual" && length >= i + 1) {
+            if(parsed[i + 1] === "on" || parsed[i + 1] === "on." || parsed[i + 1] === "on!" || parsed[i + 1] === "on?") {
+                arenadiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "virtual-on" || parsed[i] === "virtual-on." || parsed[i] === "virtual-on!" || parsed[i] === "virtual-on?") {
+            arenadiss(message.channel);
+            return;
+        }
+        if(parsed[i] === "gundam" && length >= i + 1) {
+            if(parsed[i + 1] === "versus" || parsed[i + 1] === "versus." || parsed[i + 1] === "versus!" || parsed[i + 1] === "versus?") {
+                arenadiss(message.channel);
+                return;
+            }
+            if(parsed[i + 1] === "vs" || parsed[i + 1] === "vs." || parsed[i + 1] === "vs!" || parsed[i + 1] === "vs?") {
+                arenadiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "jump" && length >= i + 1) {
+            if(parsed[i + 1] === "force" || parsed[i + 1] === "force." || parsed[i + 1] === "force!" || parsed[i + 1] === "force?") {
+                arenadiss(message.channel);
+                return;
+            }
+        }
         for(var j = 0; j < arena.length; j++) {
             if(parsed[i] == arena[j]) {
                 arenadiss(message.channel);
@@ -438,6 +471,18 @@ client.on('message', message => {
                 return;
             }
         }
+
+        if(parsed[i] === "power" && length >= i + 1) {
+            if(parsed[i + 1] === "rangers" || parsed[i + 1] === "rangers." || parsed[i + 1] === "rangers!" || parsed[i + 1] === "rangers?") {
+                rangersdiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "prbftg" || parsed[i] === "bftg" || parsed[i] === "prbftg." || parsed[i] === "bftg." || parsed[i] === "prbftg!" || parsed[i] === "bftg!" || parsed[i] === "prbftg?" || parsed[i] === "bftg?") {
+            rangersdiss(message.channel);
+            return;
+        }
+        
 
         if(parsed[i] === "devil" && length >= i + 3) {
             if(parsed[i + 1] === "may") {
@@ -464,9 +509,12 @@ function dmc4diss(channel) {
     channel.send(dmc4R[rand]);
 }
 
+function rangersdiss(channel) {
+    var rand = getRndInteger(0, rangersR.length);
+    channel.send(rangersR[rand]);
+}
+
 function pokkendiss(channel) {
-    var rand = getRndInteger(0, pokkenR.length);
-    channel.send(pokkenR[rand]);
 }
 
 function arenadiss(channel) {
