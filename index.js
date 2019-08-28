@@ -658,7 +658,7 @@ client.on('message', message => {
             }
         }
         for(var j = 0; j < sm4sh.length; j++) {
-            if(parsed[i] == smash[j]) {
+            if(parsed[i] == sm4shR[j]) {
                 smashdiss(message.channel);
                 return;
             }
