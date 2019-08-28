@@ -478,7 +478,7 @@ client.on('message', message => {
             }
         }
         for(var j = 0; j < dbfc.length; j++) {
-            if(parsed[i] == dbfx[j]) {
+            if(parsed[i] == dbfc[j]) {
                 dbfcdiss(message.channel);
                 return;
             }
