@@ -991,7 +991,7 @@ function unibdiss(channel) { var rand = getRndInteger(0, unibR.length); channel.
 function meltydiss(channel) { var rand = getRndInteger(0, meltyR.length); channel.send(meltyR[rand]); }
 function arcanadiss(channel) { var rand = getRndInteger(0, arcanaR.length); channel.send(arcanaR[rand]); }
 function ccodediss(channel) { var rand = getRndInteger(0, ccodeR.length); channel.send(ccodeR[rand]); }
-function hnkiss(channel) { var rand = getRndInteger(0, hnkR.length); channel.send(hnkR[rand]); }
+function hnkdiss(channel) { var rand = getRndInteger(0, hnkR.length); channel.send(hnkR[rand]); }
 function dbfcdiss(channel) { var rand = getRndInteger(0, dbfcR.length); channel.send(dbfcR[rand]); }
 
 function tfhdiss(channel) { var rand = getRndInteger(0, tfhR.length); channel.send(tfhR[rand]); }
