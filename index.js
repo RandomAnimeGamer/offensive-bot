@@ -69,10 +69,10 @@ var meltyR     = ["You thought this was hentai like the source material, didn't 
 var arcana     = ["ah1", "ah2", "ah3", "ah3lm", "ah3lmss", "ah3ss"];
 var arcanaR    = ["Like Skullgirls but for weeaboos", "This game is almost as dead as Chaos Code.", "Wasn't Arcana Heart 4 supposed to happen?", "There's nothing better than a large company holding a small patch hostage on Kickstarter, and then expecting people to still pay $60 for the update!", "Like BlazBlue but made for the 'progressive crowd' that wants 'equal female representation' in fighting games, but whines about Dead or Alive and Skullgirls 'oversexualizing' constantly.", "Rare footage of someone actually talking about Arcana Heart.", "Don't even lie, you play this game for waifus."];
 var ccodeR     = ["Like King of Fighters for weeaboos.", "Literally nobody plays Chaos Codegame.", "Like BlazBlue, but underwater.", "You're better off playing MVC:I tbh fam.", "Hold on, lemee just wipe off the dust on this game.", "Rare footage of someone talking about Chaos Code."];
-var hnk        = ["hnk", "hnk.", "hnk!", "hnk?", "hokuto", "hokuto.", "hokuto!", "hokuto?"];
+var hnk        = ["fotns", "fotns.", "fotns!", "fotns?", "hnk", "hnk.", "hnk!", "hnk?", "hokuto", "hokuto.", "hokuto!", "hokuto?"];
 var hnkR       = ["There's a good reason that this game never made it past the PS2 days.", "The entire game is just air juggling.", "I wonder why nobody knows what Fist of the North Star is, could it be that it's a shitty game?", "This game is already dead.", "You only play this because you wanted to play Guilty Gear with easier IKs.", "Fist of the North Star Community - Population: Just you."];
 var dbfc       = ["dengeki", "dengeki.", "dengeki!", "dengeki?", "bunko", "bunko.", "bunko!", "bunko?", "dbfc", "dbfc.", "dbfc!", "dbfc?", "dbfci", "dbfci.", "dbfci!", "dbfci?"];
-var dbfcR      = ["", "", ""];
+var dbfcR      = ["Isn't that the one with Kirito in it?", "Literally this is a game for weebs and nothing else.", "None of the animes in this game are good.", "When you want to be more hipster than Under-Night fans.", "How's it feel to play the black sheep of French Bread games?", "Just mash A+B in neutral.", "Fighting Climax has the most basic-bitch combos ever.", "Still waiting for Sonic to be playable.", "Imagine releasing an outdated version of your game in America."];
 
 var tfh        = ["tfh", "tfh.", "tfh!", "tfh?"];
 var tfhR       = ["Isn't that just some brony fanfiction game?", "Like BlazBlue but for babies.", "How long has Early Access been?", "Is the game actually complete yet?", "It's like BlazBlue, but with an almost non-existent community.", "The game with a community that firmly believes any game is Street Fighter 1 if more than one character can do something.", "I guess Fighting really isn't Magic.", "Did someone say Cease and Desist?", "How many settings do I need to scroll through to change anything?", "I love the lip syncing on intro animations.", "TFH has the smallest roster in the existence of fighting games since Street Fighter 1."];
@@ -443,6 +443,46 @@ client.on('message', message => {
                 return;
             }
         }
+        if(parsed[i] === "hokuto" && length >= i + 2) {
+            if(parsed[i + 2] === "ken" || parsed[i + 2] === "ken." || parsed[i + 2] === "ken!" || parsed[i + 2] === "ken?") {
+                hnkdiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "fist" && length >= i + 3) {
+            if(parsed[i + 3] === "north" || parsed[i + 3] === "north." || parsed[i + 3] === "north!" || parsed[i + 3] === "north?") {
+                hnkdiss(message.channel);
+                return;
+            }
+        }
+        for(var j = 0; j < hnk.length; j++) {
+            if(parsed[i] == hnk[j]) {
+                hnkdiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "dengeki") {
+			dbfcdiss(message.channel);
+			return;
+        }
+        if(parsed[i] === "fighting" && length >= i + 1) {
+            if(parsed[i + 1] === "climax" || parsed[i + 1] === "climax." || parsed[i + 1] === "climax!" || parsed[i + 1] === "climax?") {
+                dbfcdiss(message.channel);
+                return;
+            }
+        }
+        if(parsed[i] === "climax" && length >= i + 1) {
+            if(parsed[i + 1] === "ignition" || parsed[i + 1] === "ignition." || parsed[i + 1] === "ignition!" || parsed[i + 1] === "ignition?") {
+                dbfcdiss(message.channel);
+                return;
+            }
+        }
+        for(var j = 0; j < dbfc.length; j++) {
+            if(parsed[i] == dbfx[j]) {
+                dbfcdiss(message.channel);
+                return;
+            }
+        }		
 		
 		// Indie
         if((parsed[i] === "them's" || parsed[i] === "thems" || parsed[i] === "them") && length >= i + 2) {
@@ -951,6 +991,8 @@ function unibdiss(channel) { var rand = getRndInteger(0, unibR.length); channel.
 function meltydiss(channel) { var rand = getRndInteger(0, meltyR.length); channel.send(meltyR[rand]); }
 function arcanadiss(channel) { var rand = getRndInteger(0, arcanaR.length); channel.send(arcanaR[rand]); }
 function ccodediss(channel) { var rand = getRndInteger(0, ccodeR.length); channel.send(ccodeR[rand]); }
+function hnkiss(channel) { var rand = getRndInteger(0, hnkR.length); channel.send(hnkR[rand]); }
+function dbfcdiss(channel) { var rand = getRndInteger(0, dbfcR.length); channel.send(dbfcR[rand]); }
 
 function tfhdiss(channel) { var rand = getRndInteger(0, tfhR.length); channel.send(tfhR[rand]); }
 function sgdiss(channel) { var rand = getRndInteger(0, sgR.length); channel.send(sgR[rand]); }
