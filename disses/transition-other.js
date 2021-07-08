@@ -1,0 +1,12 @@
+var dbfc = ["dengeki", "dengeki.", "dengeki!", "dengeki?", "bunko", "bunko.", "bunko!", "bunko?", "dbfc", "dbfc.", "dbfc!", "dbfc?", "dbfci", "dbfci.", "dbfci!", "dbfci?"];
+var dbfcR = ["Isn't that the one with Kirito in it?", "Literally this is a game for weebs and nothing else.", "None of the animes in this game are good.", "When you want to be more hipster than Under-Night fans.", "How's it feel to play the black sheep of French Bread games?", "Just mash A+B in neutral.", "Fighting Climax has the most basic-bitch combos ever.", "Still waiting for Sonic to be playable.", "Imagine releasing an outdated version of your game in America."];
+
+var tfh = ["tfh", "tfh.", "tfh!", "tfh?"];
+var tfhR = ["Isn't that just some brony fanfiction game?", "Like BlazBlue but for babies.", "How long has Early Access been?", "Is the game actually complete yet?", "It's like BlazBlue, but with an almost non-existent community.", "The game with a community that firmly believes any game is Street Fighter 1 if more than one character can do something.", "I guess Fighting really isn't Magic.", "Did someone say Cease and Desist?", "How many settings do I need to scroll through to change anything?", "I love the lip syncing on intro animations.", "TFH has the smallest roster in the existence of fighting games since Street Fighter 1."];
+
+var sg = ["skullgirls", "sg", "skullgirls?", "sg?", "skullgirls.", "sg.", "skullgirls!", "sg!"];
+var sgR = ["Don't even lie, you play this game for the waifus.", "Does this game have enough buttons?", "How many settings do I need to scroll through to change anything?", "Hey look, it's bootleg Marvel VS Capcom!", "It'll never get a spot at EVO's main stage.", "Literally everyone has this game and next to nobody plays it.", "Skullgirls is my favorite card game.", "Hold on, lemee just wipe off the dust on this game."];
+
+var rangersR = ["Wait, wasn't Justin Wong involved with this game? It doesn't look like it.", "Looks like a mobile game, plays like a mobile game.", "I play Power Rangers BFTG because I enjoy braindead loops.", "lol auto combos", "Hey, can I invite you to my lobby? What do you mean by 'no'?", "Known for the best game mode variety: VS Mode, Multi-VS Mode, Learning VS Mode, and Online VS Mode.", "Don't even lie, you play this game only for nostalgia.", "Only scrubs play that game.", "Only filthy casuals play that game.", "Mario Party is more competitive than Power Rangers.", "Power Rangers is the most jank game ever."];
+
+module.exports = { dbfc, dbfcR, tfh, tfhR, sg, sgR, rangersR };

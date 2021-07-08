@@ -1,0 +1,19 @@
+var bb = ["blazblue", "blazeblue", "bb", "blazblue.", "blazeblue.", "bb.", "blazblue!", "blazeblue!", "bb!", "blazblue.", "blazeblue?", "bb?"];
+var bbR = ["How are you enjoying your DLC?", "Ready for the new EXTEND version?", "How many times do you DP? Let me guess, you're going to say 'How many breads have you eaten in your life'?", "Netplay with any randoms lately? No? Okay, then.", "Don't even lie, you play this game for the waifus.", "Hold on, lemee just wipe off the dust on this game.", "Only Arc shills play BlazBlue."];
+
+var bbct = ["bbct", "ct", "bbct.", "ct.", "bbct!", "ct!", "bbct?", "ct?"];
+var bbctR = ["I main Noel's drive button.", "I main Hakumen.", "I main Arakune.", "Gotta love the underdeveloped guard crush system.", "The best version is on Steam because nobody plays it anyways.", "I play BlazBlue Calamity Trigger because I can't play Guilty Gear.", "The inferior version to Guilty Gear X2.", "Ice cars!"];
+
+var bbcs = ["bbcs", "bbcs2", "bbcse", "bbcsex", "cs", "cs2", "cse", "csex", "bbcs.", "bbcs2.", "bbcse.", "bbcsex.", "cs.", "cs2.", "cse.", "csex.", "bbcs!", "bbcs2!", "bbcse!", "bbcsex!", "cs!", "cs2!", "cse!", "csex!", "bbcs?", "bbcs2?", "bbcse?", "bbcsex?", "cs?", "cs2?", "cse?", "csex?"];
+var bbcsR = ["I main CS1 Hazama.", "I main Extend Ragna.", "BBCS players are like Melee players, they literally never upgrade their game even when superior versions exist.", "j.C loops", "Ice cars!"];
+
+var bbcp = ["bbcp", "bbcpe", "bbcpex", "cp", "cpex", "bbcp.", "bbcpe.", "bbcpex.", "cp.", "cpex.", "bbcp!", "bbcpe!", "bbcpex!", "cp!", "cpex!", "bbcp?", "bbcpe?", "bbcpex?", "cp?", "cpex?"];
+var bbcpR = ["I main Vanilla Kokonoe.", "I main Celica.", "BBCP isn't faster, it's artificially sped up.", "How are you enjoying your $200 game?", "This is the only game to have worse DLC than BBTAG.", "So what was that about there being no EXTEND?", "Overrated trash."];
+
+var bbcf = ["bbcf", "bbcf2", "cf", "cf2", "bbcf.", "bbcf2.", "cf.", "cf2.", "bbcf!", "bbcf2!", "cf!", "cf2!", "bbcf?", "bbcf2?", "cf?", "cf2?"];
+var bbcfR = ["How does it feel to have BBTAG replace BBCF at tournaments?", "It's so bad, you have to download a rehaul mod to play it.", "I main Pre-Patch Nine the Phantom.", "I main Carl Clover.", "I main Jin Kisaragi.", "Even Mori wants to forget that this game exists.", "How's your free disk space? I think it's crying right now."];
+
+var bbtag = ["bbtag", "bbctb", "bbtag.", "bbctb.", "bbtag?", "bbctb?", "bbtag!", "bbctb!"];
+var bbtagR = ["How are you enjoying your DLC?", "Come on, you can play a game with more than two buttons.", "There's more to fighters than picking Gordeau and Ruby.", "Nobody plays that dead game anymore.", "I'd rather play BlazBlue RR than that trash.", "A->A->B->B->jump->A->A->B->B->C", "First you have to disable your HUD to get above 30FPS.", "Don't worry, you can escape astral finishes.", "How are those sprites looking for you?", "Hey, can I invite you to my lobby? What do you mean by 'no'?", "Known for the best game mode variety: VS Mode, Infinite VS Mode, Weeb Fanfiction VS Mode, Learning VS Mode, and Online VS Mode.", "Even the opening cutscene doesn't want you to play it because it literally crashes the game.", "Apparently they thought Es was more important than even BBCT characters.", "How's Fanfiction.net? I mean, Story Mode. I meant to say Story Mode.", "How's them physics? https://www.youtube.com/watch?v=WMdHkD0fDJo", "I play BBTAG because I enjoy braindead loops.", "lol auto combos", "Don't even lie, you play this game for the waifus.", "I don't play BlazBlue Price Tag Battle.", "It's so bad, you have to download a rehaul mod to play it.", "Literally everyone in BBTAG plays the exact same.", "Only Arc System Works shills defend BBTAG."];
+
+module.exports = { bb, bbR, bbct, bbctR, bbcs, bbcsR, bbcp, bbcpR, bbcf, bbcfR, bbtag, bbtagR };
