@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
-require('./disses/_require.js');
+const client = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
+const r = require('./disses/_require.js');
 
 client.once('ready', () => {
     console.log('Ready!');
@@ -8,13 +8,74 @@ client.once('ready', () => {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on('message', message => {
-    if(message.author.id == 516344023628120206) return;
-    var msg = message.content.toLowerCase();
+const serverid = '633405988078223380';
+const acceptable_channels = ['862783022688370709', '633405988078223383', '633407384131207188'];
+const role_channel = "633407914207477760";
+const role_message = "864751821176176640";
+const announce_emoji = 'casual_stick';
+const suggestions_emoji = 'shizuku_think';
+const announce_role = "862541364507443231";
+const suggest_role = "862540403901988875";
 
-    var parsed = msg.split(" ");
-    var length = parsed.length;
-    for(var i = 0; i < length; i++) {
+client.on('messageReactionAdd', async (reaction, user) => {
+    if (reaction.partial) {
+        try { await reaction.fetch(); } catch (error) { console.error('Something went wrong when fetching the message: ', error); return; }
+    }
+    if (client.guilds.partial) {
+        try { await client.guilds.fetch(); } catch (error) { console.error('Something went wrong when fetching the guilds: ', error); return; }
+    }
+
+    if (reaction.message.channel.id == role_channel && reaction.message.id == role_message) {
+        let guild = client.guilds.cache.filter((guild) => { return guild.id == serverid });
+        let guild_members = guild.get(serverid).members;
+        let guild_user = guild_members.cache.get(user.id);
+
+        if (guild_user !== undefined) {
+        switch (reaction._emoji.name) {
+            case announce_emoji:
+                guild_user.roles.add(announce_role);
+                break;
+            case suggestions_emoji:
+                guild_user.roles.add(suggest_role);
+                break;
+            }
+        }
+    }
+});
+
+client.on('messageReactionRemove', async (reaction, user) => {
+    if (reaction.partial) {
+        try { await reaction.fetch(); } catch (error) { console.error('Something went wrong when fetching the message: ', error); return; }
+    }
+    if (client.guilds.partial) {
+        try { await client.guilds.fetch(); } catch (error) { console.error('Something went wrong when fetching the guilds: ', error); return; }
+    }
+
+    if (reaction.message.channel.id == role_channel && reaction.message.id == role_message) {
+        let guild = client.guilds.cache.filter((guild) => { return guild.id == serverid });
+        let guild_members = guild.get(serverid).members;
+        let guild_user = guild_members.cache.get(user.id);
+
+        switch (reaction._emoji.name) {
+        case announce_emoji:
+            guild_user.roles.remove(announce_role);
+            break;
+        case suggestions_emoji:
+            guild_user.roles.remove(suggest_role);
+            break;
+        }
+    }
+});
+
+client.on('message', message => {
+    if (message.author.id == 516344023628120206) return;
+    if (!acceptable_channels.includes(message.channel.id)) return;
+
+    let msg = message.content.toLowerCase();
+
+    let parsed = msg.split(" ");
+    let length = parsed.length;
+    for(let i = 0; i < length; i++) {
         // Street Fighter
         if (r.sf1.includes(parsed[i])) { getcombdiss(message.channel, r.sfR, r.sf1R); return; }
         if (r.sf2.includes(parsed[i])) { getcombdiss(message.channel, r.sfR, r.sf2R); return; }
@@ -382,11 +443,11 @@ client.on('message', message => {
     }
 });
 
-function getdiss(channel, response) { var rand = getRndInteger(0, response.length); channel.send(response[rand]); }
+function getdiss(channel, response) { let rand = getRndInteger(0, response.length); channel.send(response[rand]); }
 function getcombdiss(channel, response1, response2) {
-    var arrand = getRndInteger(0, 9);
-    if (arrand > 5) { var rand = getRndInteger(0, response1.length); channel.send(response1[rand]); }
-    else { var rand = getRndInteger(0, response2.length); channel.send(response2[rand]); }
+    let arrand = getRndInteger(0, 9);
+    if (arrand > 5) { let rand = getRndInteger(0, response1.length); channel.send(response1[rand]); }
+    else { let rand = getRndInteger(0, response2.length); channel.send(response2[rand]); }
 }
 function parsemanually(i, msg, depth1, depth2, depth3, depth4, depth5) {
     let depth = 5;
